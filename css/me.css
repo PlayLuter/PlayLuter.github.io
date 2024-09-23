@@ -1,3 +1,8 @@
+main, body, html {
+    width: 100vw;
+    min-width: fit-content;
+}
+
 .monkey {
     height: 28vw;
     width: auto;
