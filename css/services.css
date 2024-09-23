@@ -1,0 +1,8 @@
+.background3 {
+    width: 330px;
+    height: auto;
+    top: 2500px;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "VIVL Rail";
+    src: url("../font/vivl-rail.otf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font_VIVL {
+    font-family: VIVL Rail;
+}

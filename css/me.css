@@ -1,0 +1,42 @@
+.monkey {
+    height: 28vw;
+    width: auto;
+    right: 14.5vw;
+    top: 19vw;
+    position: absolute;
+}
+
+.background1 {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.text_me_up {
+    color: white;
+    font-size: 96px;
+}
+
+.text_me_down {
+    color: white;
+    font-size: 20px;
+}
+
+.button_move_to_contacts {
+    background-color: #E87C0D; /*Цвет фона*/
+    height: 45px; /*размер фона по высоте*/
+    width: 250px; /*размер фона по ширине*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px; /*Отступ с лева*/
+    border-radius: 42px; /*закругление фона*/
+    border: 0px;
+    cursor: pointer; /*Изменяет курсор при наведении*/
+}
+
+.button_font {
+    color: white;
+    font-size: 20px;
+}

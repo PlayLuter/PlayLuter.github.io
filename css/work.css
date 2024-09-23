@@ -1,0 +1,7 @@
+.background2 {
+    width: 100vw;
+    height: auto;
+    top: 1500px;
+    position: absolute;
+    z-index: -1;
+}

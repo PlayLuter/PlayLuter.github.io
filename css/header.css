@@ -1,0 +1,57 @@
+header {
+    position: fixed;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999999;
+}
+
+.header_button {
+    color: white;
+    background-color: rgb(84, 84, 84);
+    border: 0.15vw rgb(61, 61, 61) solid;
+    height: 2.5vw;
+    width: 54.9vw;
+    font-size: 1.3vw;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.2s linear;
+    z-index: 9999999;
+}
+
+.header_button:hover {
+    color: #FF8100;
+  }
+
+.btn-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_button_left {
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    background-color: rgb(84, 84, 84);
+    stroke: rgb(61, 61, 61);
+    stroke-width: 30px;
+    z-index: 9999999;
+}
+
+.header_button_right {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    background-color: rgb(84, 84, 84);
+    stroke: rgb(61, 61, 61);
+    stroke-width: 3;
+    z-index: 9999999;
+}
+
+.no-select {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Стандартный синтаксис */
+  }
