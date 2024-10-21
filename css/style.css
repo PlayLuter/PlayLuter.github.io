@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "VIVL Rail";
+    src: url("../font/vivl-rail.otf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FRACTAL";
+    src: url("../font/fractal.otf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Deledda Regular";
+    src: url("../font/Deledda\ Open\ Regular.ttf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font_VIVL {
+    font-family: VIVL Rail;
+}
+.font_FRACTAL {
+    font-family: FRACTAL;
+}
+.font_Deledda {
+    font-family: Deledda Regular;
+}
+
+/* Общие стили */
+body {
+    background-color: #fff;
+}
+
+a {
+    color:black; /*Цвет для ссылок*/
+    text-decoration: none; /*Отмена подчеркивания для ссылок*/
+}
+ul {
+    list-style: none; /*Удаление маркеровки у списка*/
+    padding: 0;
+    margin: 0; /*Удаление отступов*/
+}
+
+
+.header {
+    display: flex; /*выравнивание элементов по горизонтали*/
+    justify-content:center; /*Выравнивание элементов по центру экрана*/
+    align-items: center; /*Выравнивание элементов по центру экрана без растягивания элементов*/
+    padding-top: 30px;
+}
+
+.logo {
+
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_nav {
+    
+}
+
+.header_list {
+    display: flex; /*выравнивание элементов по горизонтали*/
+    /* gap: -5px; /*Отсуп между элементами списка*/
+
+}
+
+.header_nav a {
+    color: #ffffff;
+    font-family: "VIVL Rail";
+    font-size: 18px; /*Размер шрифта*/
+    background-color: rgb(84, 84, 84);
+    border: 4px rgb(61, 61, 61) solid;
+    height: 40px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.header_nav a:hover {
+    opacity: 0.95;
+}
+
+.header_left {
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.header_right {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.Obutton {
+    height: 50px;
+    width: 250px;
+    color: #FFF;
+    font-family: "VIVL Rail";
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 42px;
+    background: #E87C0D;
+
+    transition: 0.3s;
+}
+
+.Obutton:hover {
+    opacity: 0.9;
+}
