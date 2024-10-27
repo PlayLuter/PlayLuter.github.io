@@ -86,11 +86,11 @@ ul {
     position: relative;
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 1.3vw; /*Размер шрифта*/
+    font-size: clamp(1vh,1.3vw,1.3vw); /*Размер шрифта*/
     letter-spacing: 0.1em; /*Отсуп между букв*/
     background-color: rgb(84, 84, 84);
     border: 0.2em rgb(61, 61, 61) solid;
-    height: 2.5vw;
+    height: clamp(2.5vh,2.5vw,2.5vw);
     width: 15vw;
     margin: -1px;
     display: flex;

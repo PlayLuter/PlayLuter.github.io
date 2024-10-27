@@ -35,7 +35,7 @@
 }
 
 .about_title{
-    font-size: clamp(4vh,5vw,5vw);
+    font-size: var(--title-size);
     font-family: "VIVL Rail";
     margin-top: 3vw; 
     margin-bottom: 2vw;
@@ -43,7 +43,7 @@
 }
 
 .about_subtitle{
-    font-size: clamp(2vh,1.3vw,1.3vw);
+    font-size: var(--subtitle-size);
     font-family: "FRACTAL";
 }
 

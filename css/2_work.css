@@ -13,14 +13,15 @@
 }
 
 .back_2{
-    margin-top: -20vw;
+    margin-top: -22vw;
     width: 100vw;
     z-index: 0;
 }
 
 .work_title {
     color: #fff;
-    font-size: 5vw;
+    mix-blend-mode: difference;
+    font-size: var(--title-size);
     font-family: "VIVL Rail";
     margin-top: 3vw; 
     margin-bottom: 2vw;
@@ -30,7 +31,7 @@
 .work_subtitle {
     color: #fff;
     width: 28vw;
-    font-size: 1.3vw;
+    font-size: var(--subtitle-size);
     font-family: "FRACTAL";
     margin-bottom: 3vw;
 }
@@ -47,7 +48,7 @@
 }
 
 .img1{
-    width: 33vw;
+    width: clamp(33vh,33vw,33vw);
     position: relative;
     height: auto;
     margin-top: -7.5vw;
@@ -75,12 +76,62 @@
     justify-content: center;
     align-items: center;
     font-family: "Inter-Light";
-    font-size: 1vw;
-    width: 6vw;
-    height: 1.5vw;
+    font-size: clamp(1vh,1vw,1vw);
+    width: clamp(6vh,6vw,6vw);
+    height: clamp(2vh,1.5vw,1.5vw);
     border: 0.1em #ADADAD solid;
     margin-bottom: 1vw;
     margin-top: 0.7vw;
     border-radius: 0.5em;
     z-index: 3;
 } 
+
+
+.flexbutton button{
+    position: relative;
+    width: clamp(7vh,5vw,5vw);
+    height: clamp(4.5vh,3vw,3vw);
+    background-color: #fff;
+    border-radius: 2em;
+    border:0;
+    box-shadow: 0.5em 0.5em 3em rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.flexbutton{
+    display: flex;
+    margin-top: 4vw;
+    gap:2vw;
+}
+
+.buttonleft{
+    margin-left: 13vw;
+}
+
+.flexbutton button img{
+    width: clamp(3vh,2vw,2vw);
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.arrowL{
+    transform:rotate(180deg);
+    padding-left: 1.5vw;
+}
+
+.arrowR{
+    padding-left: 1.5vw;
+}
+
+@media (width<600px) {
+    .back_2{
+        margin-top: -27vw;
+    } 
+    .work_subtitle{
+        width: 100%;
+    }
+}
