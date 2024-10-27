@@ -51,3 +51,26 @@
     display: flex;
     gap: 40px;
 }
+
+.work_undertext{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #ADADAD;
+    gap: 55px;
+    margin-top: 7px;
+}
+
+
+.work_inline li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter-Light";
+    font-size: 18px;
+    width: 100px;
+    height: 25px;
+    border: 1.5 px #ADADAD solid;
+    border-radius: 6px;
+} 

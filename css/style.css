@@ -22,6 +22,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Inter-Light";
+    src: url("../font/Inter-Light.otf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+.font_Inter{
+    font-family: Inter-Light;
+}
+
 .font_VIVL {
     font-family: VIVL Rail;
 }
@@ -48,7 +59,7 @@ ul {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 80vw;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -60,6 +71,9 @@ ul {
     align-items: center; /*Выравнивание элементов по центру экрана без растягивания элементов*/
     padding-top: 30px;
     z-index: 20;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .header_list {
@@ -102,6 +116,15 @@ ul {
 /* ABOUT */
 
 
+.welcome-contaner{
+    position: absolute;
+    z-index: 2;
+    top: 20vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .logo {
     position: absolute;
     top: 150px;
@@ -110,21 +133,15 @@ ul {
     height: auto;
 }
 
-.welcome {
-    position: relative;
-    background-image: url(../images/back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 500px;
-    margin-top: -200px;
-    z-index: 1;
+.back_1{
+    width: 100vw;
 }
 
-.welcome .container{
-    margin-left: -200px;
-    width: 500px;
+.welcome {
+    position: relative;
 }
+
+
 .welcome_text{
     width: 500px;
 }
@@ -132,28 +149,28 @@ ul {
 .welcome_title {
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 96px; /*Размер шрифта*/
+    font-size: 7vw; /*Размер шрифта*/
     margin-bottom: 30px;
 }
 
 .welcome_subtitle {
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 20px; /*Размер шрифта*/
+    font-size: 1.5vw; /*Размер шрифта*/
     letter-spacing: 0.1em;
-    margin-bottom: 80px;
+    margin-bottom: calc(2vh + 2vw);
 }
 
 .Obutton {
-    height: 50px;
-    width: 250px;
+    height: calc(2vh + 2vw);
+    width: 20vw;
     color: #FFF;
     font-family: "VIVL Rail";
-    font-size: 20px;
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: calc(2vh + 2vw);
     border-radius: 42px;
     background: #E87C0D;
     transition: 0.3s;
