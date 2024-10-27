@@ -1,55 +1,62 @@
 .work{
     position: relative;
-    background-image: url(../images/2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: auto;
-    padding-top: 1800px;
-    margin-top: -400px;
-    z-index: 1;
 }
 
-.work .container{
-    margin-top: -1200px;
+
+.work-contaner{
+    position: absolute;
+    z-index: 2;
+    top: 0vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.back_2{
+    margin-top: -20vw;
+    width: 100vw;
+    z-index: 0;
 }
 
 .work_title {
     color: #fff;
-    width: 400px;
-    font-size: 64px;
+    font-size: 5vw;
     font-family: "VIVL Rail";
+    margin-top: 3vw; 
+    margin-bottom: 2vw;
+    width: 27vw;
 }
 
 .work_subtitle {
     color: #fff;
-    width: 500px;
-    font-size: 20px;
+    width: 28vw;
+    font-size: 1.3vw;
     font-family: "FRACTAL";
+    margin-bottom: 3vw;
 }
 
 .card{
     position: relative;
-    background-color: #ffffff;
-    height: 240px;
-    width: 540px;
-    border-radius: 12px;
-    z-index: 18;
-    margin-top: 190px;
+    background-color: snow;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 1em;
+    margin-top: 11vw;
+    box-shadow: 0.5em 0.5em 3em rgb(0, 0, 0);
+    z-index: 1;
 }
 
 .img1{
-    width: 480px;
+    width: 33vw;
+    position: relative;
     height: auto;
-    margin-top: -80px;
-    border-radius: 12px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: -7.5vw;
+    border-radius: 1em;
+    z-index: 2;
 }
 .flex{
     display: flex;
-    gap: 40px;
+    gap: 3vw;
 }
 
 .work_undertext{
@@ -58,8 +65,8 @@
     justify-content: center;
     align-items: center;
     color: #ADADAD;
-    gap: 55px;
-    margin-top: 7px;
+    gap: 1vw;
+    z-index: 3;
 }
 
 
@@ -68,9 +75,12 @@
     justify-content: center;
     align-items: center;
     font-family: "Inter-Light";
-    font-size: 18px;
-    width: 100px;
-    height: 25px;
-    border: 1.5 px #ADADAD solid;
-    border-radius: 6px;
+    font-size: 1vw;
+    width: 6vw;
+    height: 1.5vw;
+    border: 0.1em #ADADAD solid;
+    margin-bottom: 1vw;
+    margin-top: 0.7vw;
+    border-radius: 0.5em;
+    z-index: 3;
 } 

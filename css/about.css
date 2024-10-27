@@ -1,37 +1,93 @@
+.about{
+    display: flex;
+}
+
+.about_right{
+    position: relative;
+    height: 38vw;
+}
+
+.about_left{
+    height: 25vw;
+    width: 30vw;
+}
+
+@media (width<600px) {
+    .about{
+        flex-direction: column;
+
+    }
+    .about_title{
+        text-align: center;
+
+    }
+    .about_left{
+        width: 100%;
+        height: auto;
+    }
+    .about_right{
+        height: 55vw;
+        margin-top: 24vw;
+        margin-left: 12vw;
+        transform: scale(1.5);
+    }
+
+}
+
 .about_title{
-    font-size: 64px;
+    font-size: clamp(4vh,5vw,5vw);
     font-family: "VIVL Rail";
-    /* margin-top: 50px; */
-    margin-bottom: 30px;
-    width: 400px;
+    margin-top: 3vw; 
+    margin-bottom: 2vw;
+
 }
 
 .about_subtitle{
-    font-size: 20px;
+    font-size: clamp(2vh,1.3vw,1.3vw);
     font-family: "FRACTAL";
-    width: 400px;
 }
 
 .about1 {
-    position: relative;
-    width: 300px;
+    position: absolute;
+    width: 21vw;
     height: auto;
-    left: 600px;
-    top: -400px;
+    left: 8vw;
+    top: -5vw;
+    z-index: 2;
 }
 
 .about2 {
-    position: relative;
-    width: 300px;
+    position: absolute;
+    width: 21vw;
     height: auto;
-    left: 450px;
-    top: -50px;
+    left: 12.4vw;
+    top: 18.5vw;
+    z-index: 2;
 }
 
 .about3 {
-    position: relative;
-    width: 230px;
+    position: absolute;
+    width: 15.5vw;
     height: auto;
-    left: 550px;
-    top: -250px;
+    left: 38vw;
+    top: 3.3vw;
+    z-index: 2;
+}
+
+.aboutl1{
+    position: absolute;
+    width: 11vw;
+    height: auto;
+    top:4.2vw;
+    left: 28vw;
+    z-index: 1;
+}
+
+.aboutl2{
+    position: absolute;
+    width: 6vw;
+    height: auto;
+    top: 14.6vw;
+    left: 32.5vw;
+    z-index: 1;
 }

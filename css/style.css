@@ -86,12 +86,13 @@ ul {
     position: relative;
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 18px; /*Размер шрифта*/
+    font-size: 1.3vw; /*Размер шрифта*/
     letter-spacing: 0.1em; /*Отсуп между букв*/
     background-color: rgb(84, 84, 84);
-    border: 4px rgb(61, 61, 61) solid;
-    height: 40px;
-    width: 250px;
+    border: 0.2em rgb(61, 61, 61) solid;
+    height: 2.5vw;
+    width: 15vw;
+    margin: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,13 +105,13 @@ ul {
 }
 
 .header_left {
-    border-top-left-radius: 11px;
-    border-bottom-left-radius: 11px;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
 }
 
 .header_right {
-    border-top-right-radius: 11px;
-    border-bottom-right-radius: 11px;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
 }
 
 /* ABOUT */
@@ -119,10 +120,20 @@ ul {
 .welcome-contaner{
     position: absolute;
     z-index: 2;
-    top: 20vw;
+    top: 19vw;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.monkey{
+    position: absolute;
+    width: 38vw;
+    height: auto;
+    top: 15vw;
+    right: 11vw;
+    z-index: 1;
+
 }
 
 .logo {
@@ -149,31 +160,33 @@ ul {
 .welcome_title {
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 7vw; /*Размер шрифта*/
-    margin-bottom: 30px;
+    font-size: clamp(4.5vh,7vw,7vw); /*Размер шрифта*/
+    margin-bottom: 2vw;
 }
 
 .welcome_subtitle {
     color: #ffffff;
     font-family: "VIVL Rail";
-    font-size: 1.5vw; /*Размер шрифта*/
+    font-size: clamp(1.3vh,1.5vw,1.5vw); /*Размер шрифта*/
     letter-spacing: 0.1em;
-    margin-bottom: calc(2vh + 2vw);
+    margin-bottom: 3vw;
 }
 
 .Obutton {
-    height: calc(2vh + 2vw);
-    width: 20vw;
     color: #FFF;
     font-family: "VIVL Rail";
-    font-size: 1.5vw;
+    font-size: clamp(1.3vh,2vw,2vw);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: calc(2vh + 2vw);
+    padding-left: 9vw;
+    padding-right: 4vw;
+    padding-top: 1.4vw;
+    padding-bottom: 1.4vw;
     border-radius: 42px;
     background: #E87C0D;
     transition: 0.3s;
+    border: 0;
 }
 
 .Obutton:hover {
