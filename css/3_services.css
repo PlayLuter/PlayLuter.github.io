@@ -1,0 +1,191 @@
+.services{
+    position: relative;
+}
+
+
+.services-contaner{
+    position: relative;
+    z-index: 0;
+}
+
+.back_3{
+    position: absolute;
+    float: left;
+    margin-top: -10vw;
+    width: 15vw;
+    z-index: 0;
+    right: 0;
+}
+
+.services_title{
+    color: #000000;
+    mix-blend-mode: difference;
+    font-size: var(--title-size);
+    font-family: "VIVL Rail";
+    margin-top: 3vw; 
+    margin-bottom: 2vw;
+    width: 27vw;
+    z-index: 1;
+}
+
+.services_button1{
+    width: clamp(10vh,15vw,15vw);
+    height: clamp(3vh,3vw,3vw);
+    background-color: #F2F4F9;
+    border: 0;
+    border-radius: 15em;
+    font-size: clamp(1.3vh,1.3vw,1.3vw);
+    font-family: "Inter-Light";
+    color: #E87C0D;
+    z-index: 1;
+}
+
+.services_button2{
+    width: clamp(10vh,15vw,15vw);
+    height: clamp(3vh,3vw,3vw);
+    color: #9A99B0;
+    background-color: #ffffff00;
+    font-family: "Inter-Light";
+    font-size: clamp(1.3vh,1.3vw,1.3vw);
+    border: 0.08em #9A99B0 solid;
+    border-radius: 15em;
+    z-index: 1;
+}
+.services_button_position{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 5vw;
+}
+
+.services_flex{
+    display: flex;
+    margin-top: 5vw;
+}
+/*flex direction: column*/
+
+.services_right{
+    position: relative;
+    height: 38vw;
+    margin-left: 5vw;
+    
+}
+
+.services_left{
+    width: 35vw;
+}
+
+
+.services_img{
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    border-radius: 3em;
+}
+
+.services_title_text {
+    color: #E87C0D;
+    font-size: clamp(1.7vh,2vw,2vw);
+    font-family: "Inter-Light";
+    margin-bottom: 2vw;
+}
+
+.services_subtitle_text {
+    color: #000;
+    font-size: clamp(1.7vh,1.7vw,1.7vw);
+    font-family: "FRACTAL";
+    margin-bottom: 2vw;
+}
+
+.services_list_title {
+    color: #000000;
+    font-size: clamp(1.7vh,1.5vw,1.5vw);
+    font-family: "Inter-Light";
+    font-weight: 550;
+    margin-bottom: 1vw;
+}
+
+.services_text_list{
+    list-style-image: url(../images/list_array2.png);
+    line-height: 2;
+    font-family: "FRACTAL";
+    font-size: clamp(1.5vh,1.3vw,1.3vw);
+
+}
+
+.li_container{
+    display: flex;
+    gap: 5vw;
+}
+
+.services_button {
+    color: #FFF;
+    font-family: "VIVL Rail";
+    font-size: clamp(1.3vh,1.5vw,1.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 42px;
+    background: #E87C0D;
+    transition: 0.3s;
+    border: 0;
+    margin-top: 27vw;
+}
+
+.services_cost_container {
+    display:flex;
+    justify-content: flex-end;
+    gap: 1.15vw;
+    margin-top: -3vw;
+}
+
+.services_cost_list {
+    font-family: "Inter-Light";
+    font-size: clamp(1.3vh,1.3vw,2vw);
+}
+
+@media (width<=600px) {
+    .services{
+        margin-top: 40vw;
+    }
+    .services_flex{
+        flex-direction: column;
+    }
+    .services_button_position{
+        gap: 1vw;
+    }
+    .services_img{
+        width: 100%;
+    }
+    .services_right{
+        margin-top: 2vw;
+    }
+    .services_button{
+        padding-left: 15vw;
+        padding-right: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin-top: 60vw;
+    }
+    .services_cost_container{
+        margin-top: -5vw;
+        margin-left: 70vw;
+    }
+    .services_cost_container li{
+        width: 15vw;
+    }
+    .services_text_list{
+        line-height: 1.5;
+    }
+    .back_3{
+        margin-top: -25vw;
+    }
+    .li_container{
+        gap: 7vw;
+    }
+}
