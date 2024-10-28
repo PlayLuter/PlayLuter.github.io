@@ -34,7 +34,7 @@
     background-color: #F2F4F9;
     border: 0;
     border-radius: 15em;
-    font-size: clamp(1.3vh,1.3vw,1.3vw);
+    font-size: clamp(1.2vh,1.3vw,1.3vw);
     font-family: "Inter-Light";
     color: #E87C0D;
     z-index: 1;
@@ -46,7 +46,7 @@
     color: #9A99B0;
     background-color: #ffffff00;
     font-family: "Inter-Light";
-    font-size: clamp(1.3vh,1.3vw,1.3vw);
+    font-size: clamp(1.2vh,1.3vw,1.3vw);
     border: 0.08em #9A99B0 solid;
     border-radius: 15em;
     z-index: 1;
