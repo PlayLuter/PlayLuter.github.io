@@ -51,6 +51,7 @@
     border-radius: 15em;
     z-index: 1;
 }
+
 .services_button_position{
     display:flex;
     justify-content: center;
@@ -77,11 +78,14 @@
 }
 
 
-.services_img{
+.services_img1, .services_img2, .services_img3 {
     position: absolute;
     width: 35vw;
-    height: auto;
+    height: 55vw;
     border-radius: 3em;
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 1;
 }
 
 .services_title_text {
@@ -159,7 +163,7 @@
     .services_button_position{
         gap: 1vw;
     }
-    .services_img{
+    .services_img1, .services_img2 , .services_img3{
         width: 100%;
     }
     .services_right{

@@ -75,7 +75,7 @@
                 <h3 class="work_subtitle">
                     Представлены не все работы. Со всеми работами можно ознакомиться на Artstation.
                 </h3>
-                <div class="flex">
+                <div class="flex" id="move_card_flex">
                     <div class="card">
                         <img src="./images/robot.gif" alt="" class="img1">
                         <div class="work_undertext work_inline">
@@ -119,10 +119,10 @@
                     </div>
                 </div>
                 <div class="flexbutton">
-                    <button class="buttonleft">
+                    <button class="buttonleft" id="move_card_bl">
                         <img src="./images/array.png" alt="" class="arrowL">
                     </button>
-                    <button class="buttonright">
+                    <button class="buttonright" id="move_card_br">
                         <img src="./images/array.png" alt="" class="arrowR">
                     </button>
                 </div>
@@ -136,38 +136,41 @@
                     Услуги
                 </h2>
                 <div class="services_button_position">
-                    <button class="services_button1">
+                    <button class="services_button1" id="services_id_button1">
                         1. 3D Model
                     </button>
-                    <button class="services_button2">
+                    <button class="services_button2" id="services_id_button2">
                         2. Animation
                     </button>
-                    <button class="services_button2">
+                    <button class="services_button2" id="services_id_button3">
                         3. Simulation
                     </button>
                 </div>
                 <div class="services_flex">
                     <div class="services_left">
-                        <img src="./images/robot.png" alt="" class="services_img">
+                        <img src="./images/robot.png" alt="" class="services_img1" id="services_id_image1">
+                        <img src="./images/turret.gif" alt="" class="services_img2" id="services_id_image2">
+                        <img src="./images/clouds.png" alt="" class="services_img3" id="services_id_image3">
+
                         <button class="services_button">
                             Заказать
                         </button>
                         <div class="services_cost_container">
                             <ul class="services_cost_list">
-                                <li>~30.000</li>
+                                <li id="services_cost_list_price_id">~30.000</li>
                                 <li>Стоимость</li>
                             </ul>
                             <ul class="services_cost_list">
-                                <li>1-2 недели</li>
+                                <li id="services_cost_list_time_id">1-2 недели</li>
                                 <li>Сроки</li>
                             </ul>
                         </div>
                     </div>
                     <div class="services_right">
-                        <div class="services_title_text">
+                        <div class="services_title_text" id="services_title_text_id">
                             3D Model
                         </div>
-                        <div class="services_subtitle_text">
+                        <div class="services_subtitle_text" id="services_id_subtitle_text">
                             Создание 3D модели любой сложности <br>
                             по вашим запросам и пожеланиям
                         </div>
@@ -217,7 +220,8 @@ footer
 
 -->
 
-
+<script src="./js/2_work.js"></script>
+<script src="./js/3_services.js"></script>
 
 </body>
 

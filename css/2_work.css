@@ -58,6 +58,7 @@
 .flex{
     display: flex;
     gap: 3vw;
+    transition-duration: 1s;
 }
 
 .work_undertext{
