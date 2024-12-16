@@ -1,4 +1,5 @@
 :root{
     --subtitle-size:clamp(2vh,1.3vw,1.3vw);
     --title-size: clamp(4vh,5vw,5vw);
+    --header-height:80px
 }

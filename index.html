@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link rel="icon" href="./images/car.jpg" type="image/jpeg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/0_style.css">
     <link rel="stylesheet" href="./css/1_about.css">
     <link rel="stylesheet" href="./css/2_work.css">
     <link rel="stylesheet" href="./css/3_services.css">
+    <link rel="stylesheet" href="./css/4_questions.css">
+    <link rel="stylesheet" href="./css/5_contacts.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="header_nav">
             <ul class="header_list">
-                <li><a href="#!" class='header_left'>Обо мне</a></li>
-                <li><a href="#!">Работы</a></li>
-                <li><a href="#!">Услуги</a></li>
-                <li><a href="#!">FAQ</a></li>
-                <li><a href="#!" class='header_right'>Контакты </a></li>
+                <li><a href="#about" class='header_left'>Обо мне</a></li>
+                <li><a href="#works">Работы</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts" class='header_right'>Контакты </a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +51,7 @@
 
         <section class="about container">
             <div class="about_left">
-                <h2 class="about_title">
+                <h2 class="about_title" id="about">
                     Обо мне
                 </h2>
                 <h3 class="about_subtitle">
@@ -69,7 +72,7 @@
         <section class="work">
             <img src="./images/2.png" alt="" class="back_2">
             <div class="container work-contaner">
-                <h2 class="work_title">
+                <h2 class="work_title" id="works">
                     Работы
                 </h2>
                 <h3 class="work_subtitle">
@@ -132,7 +135,7 @@
         <section class="services">
             <img src="./images/3.png" alt="" class="back_3">
             <div class="container services-contaner">
-                <h2 class="services_title">
+                <h2 class="services_title" id="services">
                     Услуги
                 </h2>
                 <div class="services_button_position">
@@ -148,9 +151,9 @@
                 </div>
                 <div class="services_flex">
                     <div class="services_left">
-                        <img src="./images/robot.png" alt="" class="services_img1" id="services_id_image1">
+                        <!-- <img src="./images/robot.png" alt="" class="services_img1" id="services_id_image1">
                         <img src="./images/turret.gif" alt="" class="services_img2" id="services_id_image2">
-                        <img src="./images/clouds.png" alt="" class="services_img3" id="services_id_image3">
+                        <img src="./images/clouds.png" alt="" class="services_img3" id="services_id_image3"> -->
 
                         <button class="services_button">
                             Заказать
@@ -198,30 +201,163 @@
             </div>
         </section>
 
+        <section class="questions">
+            <div class="container">
+                <h2 class="questions_title" id="faq">
+                    FAQ
+                </h2>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        1. Сроки выполнения работы
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Скорость выполнения зависит от сложности и типа работы, а также моей загруженности.
+В среднем Модель и Симуляция выполняются за неделю.
+Если речь идет про анимацию, то она занимает до 3 недель.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        2. Как связаться со мной
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Вы можете: Заполнить форму на сайте <br>
+Написать мне в социальных сетях <br>
+Написать на почту или позвонить по телефону
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        3. Почему такая цена
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Представленная цена указано условно и зависит от: <br>
+                            Длительности анимации <br>
+                            Сложности желаемого результата <br>
+                            Так же внесение правок увеличивает сроки
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        4. Делаю ли я окружение
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Могу сделать небольшое окружение для модели или анимации, но 
+                            создавать деревни, солнечные системы я не хочу
+                            Если хотите окружение могу порекомендовать человека, который специализируется на этом
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        5. Формы оплаты
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Онлайн оплата <br>
+                            Перевод на банковский счет по: <br>
+                            Номеру телефона<br>
+                            Номеру карты<br>
+                            
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts_title" id="contacts">
+                    Контакты
+                </h2>
+
+                <div class="contact__container">
+                    <span class="big-circle"></span>
+                    <img src="img/shape.png" class="square" alt="" />
+                    <div class="form">
+                      <div class="contact-info font_Dance">
+                        <h3 class="title">Вопросы? Предложения?</h3>
+                        <p class="text">
+                            Буду рад Вас услышать!
+                        </p>
+              
+                        <div class="info font_Dance">
+                          <div class="information">
+                            <img src="images/plain.png" class="icon" alt="" />
+                            <a  href="https://t.me/yanedjeykob">Написать в тг</a>
+                          </div>
+                          <div class="information">
+                            <img src="images/mail.png" class="icon" alt="" />
+                            <a href="mailto:mail@htmlacademy.ru">Написать на почту</a>
+                          </div>
+                          <div class="information">
+                            <img src="images/phone.png" class="icon" alt="" />
+                            <a href="tel:+79992191340">+7-999-219-13-40</a>
+                          </div>
+                        </div>
+              
+                        <div class="social-media font_Dance">
+                          <p>Свяжитесь со мной любым удобным для Вас способом. <br>
+                            Я Вам обязательно отвечу в течение 12 часов</p>
+                          
+                        </div>
+                      </div>
+              
+                      <div class="contact-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+              
+                        <form class="contact-form" action="index.html" autocomplete="off">
+                          <h3 class="title font_Dance">Оставьте свои контакты</h3>
+                          <div class="input-container font_Packard">
+                            <input id="input_name" type="text" name="name" class="input" />
+                            <label for="">Ваше имя</label>
+                            <span>Ваше имя</span>
+                          </div>
+                          <div class="input-container font_Packard">
+                            <input id="input_email" type="email" name="email" class="input" />
+                            <label for="">Почта</label>
+                            <span>Почта</span>
+                          </div>
+                          <div class="input-container font_Packard">
+                            <input id="input_tel" type="tel" name="phone" class="input" />
+                            <label for="">Номер телефона</label>
+                            <span>Номер телефона</span>
+                          </div>
+                          <div class="input-container textarea font_Packard">
+                            <textarea id="input_comment" name="message" class="input"></textarea>
+                            <label for="">Сообщение</label>
+                            <span>Сообщение</span>
+                          </div>
+                          <input type="submit" value="Отправить" class="btn font_Dance" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                
+
+            </div>
+        </section>
+
     </main>
 
 
 
-    <!-- 
-FAQ
-div bacground
-button img
-p
-
-Contact
-
-form
-h3         
-input
-input       
-text area
-
-footer
-
--->
 
 <script src="./js/2_work.js"></script>
 <script src="./js/3_services.js"></script>
+<script src="./js/4_questions.js"></script>
+<script src="./js/5_contacts.js"></script>
 
 </body>
 
